@@ -15,7 +15,13 @@ body {
     line-height: 1.5;
     font-family: 'Bai Jamjuree', sans-serif;
     background-image: url(../images/bg-header-desktop.png);
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: contain;
+    @include background-mirror (50%, cover);
+
+}
+
+
+a,
+a:focus,
+a:visited {
+    text-decoration: none;
 }

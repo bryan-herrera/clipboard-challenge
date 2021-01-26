@@ -1,9 +1,9 @@
 // X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
     body {
         background-image: url('../images/bg-header-mobile.png');
-        background-size: cover;
-        background-position: inherit;
+        @include background-mirror (50%, cover);
+
 
         .header {
             &__copy {
@@ -12,11 +12,22 @@
                 margin-top: 30px;
 
                 h1 {
-                    font-size: 34px;
+                    font-size: 31px;
                 }
 
                 p {
-                    font-size: 18px;
+                    font-size: 16px;
+                }
+            }
+
+            &__buttons {
+                .iOS_button {
+                    margin-bottom: 28px;
+                    max-width: 311px;
+                }
+
+                .Mac_button {
+                    max-width: 311px;
                 }
             }
         }

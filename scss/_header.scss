@@ -2,9 +2,7 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 0 21px;
-    position: relative;
-    top: 120px;
+    padding: 120px 21px 0;
 
     &__logo {
         width: 100%;
@@ -32,6 +30,39 @@
             color: $grayish-blue;
             font-size: 21px;
             font-weight: 400;
+        }
+    }
+
+    &__buttons {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        a {
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            padding: 17px 29px;
+            text-align: center;
+            border-radius: 50px;
+        }
+
+        .iOS_button {
+            background-color: $strong-cyan;
+            margin-bottom: 28px;
+            max-width: 215px;
+            margin: 0 0 0 auto;
+            border-bottom: 3px solid $strong-green;
+        }
+
+        .Mac_button {
+            background-color: $light-blue;
+            max-width: 215px;
+            border-bottom: 3px solid $strong-blue;
+
         }
     }
 

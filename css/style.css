@@ -17,16 +17,68 @@ body {
   line-height: 1.5;
   font-family: 'Bai Jamjuree', sans-serif;
   background-image: url(../images/bg-header-desktop.png);
-  background-position: center;
-  background-repeat: repeat-x;
-  background-size: contain;
+  background-size: 0;
+  position: relative;
+  background-repeat: no-repeat;
 }
 
-@media (max-width: 575.98px) {
+body::before, body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: inherit;
+  background-size: cover;
+  background-repeat: inherit;
+  background-position: 100% 50%;
+}
+
+body::before {
+  right: 50%;
+}
+
+body::after {
+  left: 50%;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+a,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 575.98px) {
   body {
     background-image: url("../images/bg-header-mobile.png");
+    background-size: 0;
+    position: relative;
+    background-repeat: no-repeat;
+  }
+  body::before, body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: inherit;
     background-size: cover;
-    background-position: inherit;
+    background-repeat: inherit;
+    background-position: 100% 50%;
+  }
+  body::before {
+    right: 50%;
+  }
+  body::after {
+    left: 50%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
   }
   body .header__copy {
     width: 100%;
@@ -34,10 +86,17 @@ body {
     margin-top: 30px;
   }
   body .header__copy h1 {
-    font-size: 34px;
+    font-size: 31px;
   }
   body .header__copy p {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  body .header__buttons .iOS_button {
+    margin-bottom: 28px;
+    max-width: 311px;
+  }
+  body .header__buttons .Mac_button {
+    max-width: 311px;
   }
 }
 
@@ -45,9 +104,7 @@ body {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 0 21px;
-  position: relative;
-  top: 120px;
+  padding: 120px 21px 0;
 }
 
 .header__logo {
@@ -77,5 +134,41 @@ body {
   color: #9fabb2;
   font-size: 21px;
   font-weight: 400;
+}
+
+.header__buttons {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.header__buttons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  padding: 17px 29px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.header__buttons .iOS_button {
+  background-color: #26baa4;
+  margin-bottom: 28px;
+  max-width: 215px;
+  margin: 0 0 0 auto;
+  border-bottom: 3px solid #259C86;
+}
+
+.header__buttons .Mac_button {
+  background-color: #6173ff;
+  max-width: 215px;
+  border-bottom: 3px solid #5062DB;
 }
 /*# sourceMappingURL=style.css.map */
