@@ -1,0 +1,38 @@
+.header {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    top: 122px;
+
+    &__logo {
+        width: 100%;
+        height: auto;
+
+        img {
+            height: 119px;
+        }
+    }
+
+    &__copy {
+        width: 59%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 70px;
+
+        h1 {
+            color: $dark-grayish-blue;
+            font-size: 46px;
+            font-weight: 600;
+            margin-bottom: 27px;
+        }
+
+        p {
+            color: $grayish-blue;
+            font-size: 21px;
+            font-weight: 400;
+        }
+    }
+
+}

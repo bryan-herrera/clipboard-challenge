@@ -22,7 +22,52 @@ body {
   background-size: contain;
 }
 
-body {
-  background-image: url("../images/bg-header-mobile.png");
+@media (max-width: 575.98px) {
+  body {
+    background-image: url("../images/bg-header-mobile.png");
+    background-size: cover;
+    background-position: inherit;
+  }
+  .header__copy p {
+    font-size: 19px;
+  }
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  top: 122px;
+}
+
+.header__logo {
+  width: 100%;
+  height: auto;
+}
+
+.header__logo img {
+  height: 119px;
+}
+
+.header__copy {
+  width: 59%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.header__copy h1 {
+  color: #4c545d;
+  font-size: 46px;
+  font-weight: 600;
+  margin-bottom: 27px;
+}
+
+.header__copy p {
+  color: #9fabb2;
+  font-size: 21px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
