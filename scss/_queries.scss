@@ -32,6 +32,18 @@
             }
         }
 
+        .main {
+            width: 100%;
+
+            &__description {
+                padding: 0 10px;
+
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+
 
     }
 }

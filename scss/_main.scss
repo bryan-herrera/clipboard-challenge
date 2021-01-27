@@ -1,0 +1,22 @@
+.main {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 170px;
+
+    &__title {
+        h2 {
+            font-weight: 600;
+            color: $dark-grayish-blue;
+        }
+    }
+
+    &__description {
+        p {
+            font-size: 20px;
+            color: $grayish-blue;
+        }
+    }
+
+}

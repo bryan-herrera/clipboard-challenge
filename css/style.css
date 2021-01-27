@@ -52,6 +52,24 @@ a:visited {
   text-decoration: none;
 }
 
+.main {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 170px;
+}
+
+.main__title h2 {
+  font-weight: 600;
+  color: #4c545d;
+}
+
+.main__description p {
+  font-size: 20px;
+  color: #9fabb2;
+}
+
 @media screen and (max-width: 575.98px) {
   body {
     background-image: url("../images/bg-header-mobile.png");
@@ -97,6 +115,15 @@ a:visited {
   }
   body .header__buttons .Mac_button {
     max-width: 311px;
+  }
+  body .main {
+    width: 100%;
+  }
+  body .main__description {
+    padding: 0 10px;
+  }
+  body .main__description p {
+    font-size: 17px;
   }
 }
 
