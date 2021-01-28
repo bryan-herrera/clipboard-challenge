@@ -70,6 +70,36 @@ a:visited {
   color: #9fabb2;
 }
 
+.hero {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 70px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.hero__image-computer img {
+  width: 100%;
+  position: relative;
+  left: -40%;
+  right: 0;
+}
+
+.hero__description {
+  font-size: 18px;
+  color: #9fabb2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__description h3 {
+  font-weight: 600;
+  color: #4c545d;
+}
+
 @media screen and (max-width: 575.98px) {
   body {
     background-image: url("../images/bg-header-mobile.png");
