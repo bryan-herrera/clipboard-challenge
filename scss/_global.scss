@@ -14,14 +14,27 @@ body {
     padding: 0;
     line-height: 1.5;
     font-family: 'Bai Jamjuree', sans-serif;
-    background-image: url(../images/bg-header-desktop.png);
-    @include background-mirror (50%, cover);
-
 }
 
 
 a,
 a:focus,
 a:visited {
+    font-size: 18px;
     text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: $dark-grayish-blue;
+    font-weight: 600;
+}
+
+p {
+    color: $grayish-blue;
+    font-weight: 400;
+    font-size: 18px;
 }

@@ -1,68 +1,82 @@
+section.header {
+    background-image: url('../images/bg-header-desktop.png');
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    border: 2px solid magenta;
+
+}
+
 .header {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 120px 21px 0;
 
     &__logo {
         width: 100%;
         height: auto;
-
-        img {
-            height: 119px;
-        }
+        text-align: center;
+        margin-bottom: 75px;
     }
 
     &__copy {
-        width: 59%;
+        width: 50%;
         height: auto;
-        margin: auto;
-        margin-top: 70px;
+        padding: 0 20px;
+        text-align: center !important;
 
         h1 {
-            color: $dark-grayish-blue;
-            font-size: 46px;
-            font-weight: 600;
-            margin-bottom: 27px;
+            font-size: 2.67rem;
         }
 
-        p {
-            color: $grayish-blue;
-            font-size: 21px;
-            font-weight: 400;
+        .copy__buttons {
+
+            margin-top: 50px;
+
+            a.ios_button {
+                display: inline-block;
+                width: 220px;
+                background-color: $strong-cyan;
+                color: #fff;
+                font-weight: 600;
+                padding: 15px 30px;
+                border-radius: 50px;
+                border-bottom: 3px solid $strong-green;
+                margin-right: 20px;
+            }
+
+            a.mac_button {
+                display: inline-block;
+                width: 220px;
+                background-color: $light-blue;
+                color: #fff;
+                font-weight: 600;
+                padding: 15px 30px;
+                border-radius: 50px;
+                border-bottom: 3px solid $strong-blue;
+            }
+
+            @media screen and (min-width: 320px) and (max-width: 568px) {
+
+                a.mac_button {
+                    width: 311px;
+                }
+
+                a.ios_button {
+                    width: 311px;
+                    margin-bottom: 25px;
+                    margin-right: 0px;
+                }
+            }
         }
+
     }
 
-    &__buttons {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        margin-top: 50px;
-
-        a {
-            display: flex;
-            justify-content: center;
-            font-size: 18px;
-            font-weight: 600;
-            color: #fff;
-            padding: 17px 29px;
-            text-align: center;
-            border-radius: 50px;
-        }
-
-        .iOS_button {
-            background-color: $strong-cyan;
-            margin-bottom: 28px;
-            max-width: 215px;
-            margin: 0 0 0 auto;
-            border-bottom: 3px solid $strong-green;
-        }
-
-        .Mac_button {
-            background-color: $light-blue;
-            max-width: 215px;
-            border-bottom: 3px solid $strong-blue;
-
+    @media screen and (min-width: 320px) and (max-width: 1440px) {
+        &__copy {
+            width: 100%;
+            padding: 0;
         }
     }
 

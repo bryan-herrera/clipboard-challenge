@@ -16,220 +16,106 @@ body {
   padding: 0;
   line-height: 1.5;
   font-family: 'Bai Jamjuree', sans-serif;
-  background-image: url(../images/bg-header-desktop.png);
-  background-size: 0;
-  position: relative;
-  background-repeat: no-repeat;
-}
-
-body::before, body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  background-image: inherit;
-  background-size: cover;
-  background-repeat: inherit;
-  background-position: 100% 50%;
-}
-
-body::before {
-  right: 50%;
-}
-
-body::after {
-  left: 50%;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
 }
 
 a,
 a:focus,
 a:visited {
+  font-size: 18px;
   text-decoration: none;
 }
 
-.main {
-  width: 60%;
-  height: auto;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 170px;
-}
-
-.main__title h2 {
-  font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: #4c545d;
+  font-weight: 600;
 }
 
-.main__description p {
-  font-size: 20px;
+p {
   color: #9fabb2;
-}
-
-.hero {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  padding-top: 70px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.hero__image-computer {
-  position: relative;
-  left: -40%;
-}
-
-.hero__image-computer img {
-  width: 100%;
-}
-
-.hero__content {
-  width: 100%;
-  height: 675px;
-}
-
-.hero__content__description {
+  font-weight: 400;
   font-size: 18px;
-  color: #9fabb2;
 }
 
-.hero__content__description h3 {
-  font-weight: 600;
-  color: #4c545d;
-}
-
-@media screen and (max-width: 575.98px) {
-  body {
-    background-image: url("../images/bg-header-mobile.png");
-    background-size: 0;
-    position: relative;
-    background-repeat: no-repeat;
-  }
-  body::before, body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    background-image: inherit;
-    background-size: cover;
-    background-repeat: inherit;
-    background-position: 100% 50%;
-  }
-  body::before {
-    right: 50%;
-  }
-  body::after {
-    left: 50%;
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-  }
-  body .header__copy {
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
-  }
-  body .header__copy h1 {
-    font-size: 31px;
-  }
-  body .header__copy p {
-    font-size: 16px;
-  }
-  body .header__buttons .iOS_button {
-    margin-bottom: 28px;
-    max-width: 311px;
-  }
-  body .header__buttons .Mac_button {
-    max-width: 311px;
-  }
-  body .main {
-    width: 100%;
-  }
-  body .main__description {
-    padding: 0 10px;
-  }
-  body .main__description p {
-    font-size: 17px;
-  }
-}
-
-.header {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  padding: 120px 21px 0;
+section.header {
+  background-image: url("../images/bg-header-desktop.png");
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid magenta;
 }
 
 .header__logo {
   width: 100%;
   height: auto;
-}
-
-.header__logo img {
-  height: 119px;
+  text-align: center;
+  margin-bottom: 75px;
 }
 
 .header__copy {
-  width: 59%;
+  width: 50%;
   height: auto;
-  margin: auto;
-  margin-top: 70px;
+  padding: 0 20px;
+  text-align: center !important;
 }
 
 .header__copy h1 {
-  color: #4c545d;
-  font-size: 46px;
-  font-weight: 600;
-  margin-bottom: 27px;
+  font-size: 2.67rem;
 }
 
-.header__copy p {
-  color: #9fabb2;
-  font-size: 21px;
-  font-weight: 400;
-}
-
-.header__buttons {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
+.header__copy .copy__buttons {
   margin-top: 50px;
 }
 
-.header__buttons a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  padding: 17px 29px;
-  text-align: center;
-  border-radius: 50px;
-}
-
-.header__buttons .iOS_button {
+.header__copy .copy__buttons a.ios_button {
+  display: inline-block;
+  width: 220px;
   background-color: #26baa4;
-  margin-bottom: 28px;
-  max-width: 215px;
-  margin: 0 0 0 auto;
+  color: #fff;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 50px;
   border-bottom: 3px solid #259C86;
+  margin-right: 20px;
 }
 
-.header__buttons .Mac_button {
+.header__copy .copy__buttons a.mac_button {
+  display: inline-block;
+  width: 220px;
   background-color: #6173ff;
-  max-width: 215px;
+  color: #fff;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 50px;
   border-bottom: 3px solid #5062DB;
+}
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+  .header__copy .copy__buttons a.mac_button {
+    width: 311px;
+  }
+  .header__copy .copy__buttons a.ios_button {
+    width: 311px;
+    margin-bottom: 25px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1440px) {
+  .header__copy {
+    width: 100%;
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
