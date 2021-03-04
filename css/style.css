@@ -53,11 +53,17 @@ section.content {
 }
 
 .content .content__text {
-  width: 40%;
   height: 500px;
+  display: flex;
+  align-items: center;
 }
 
-.content .content__text p {
+.content .content__text .content__text-align {
+  width: 40%;
+  height: 400px;
+}
+
+.content .content__text .content__text-align p {
   margin-bottom: 50px;
 }
 
