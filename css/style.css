@@ -1,14 +1,12 @@
 html {
   font-size: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -21,7 +19,7 @@ body {
 a,
 a:focus,
 a:visited {
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
 }
 
@@ -40,20 +38,42 @@ p {
   font-size: 18px;
 }
 
+section.content {
+  margin: 0;
+  padding: 50px 0px;
+}
+
+.content {
+  border: 2px solid magenta;
+}
+
+.content .content__backimg {
+  position: relative;
+  left: -34px;
+}
+
+.content .content__text {
+  width: 40%;
+  height: 500px;
+}
+
+.content .content__text p {
+  margin-bottom: 50px;
+}
+
 section.header {
   background-image: url("../images/bg-header-desktop.png");
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
   width: auto;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: auto;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 2px solid magenta;
+  align-items: center;
+}
+
+.header {
+  padding: 200px 0px 30px 0px;
 }
 
 .header__logo {
@@ -112,10 +132,16 @@ section.header {
   }
 }
 
+.header__content_description {
+  width: 55%;
+  height: auto;
+  text-align: center;
+  padding-top: 160px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 1440px) {
   .header__copy {
     width: 100%;
     padding: 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
